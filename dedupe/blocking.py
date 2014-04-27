@@ -190,7 +190,7 @@ class RecordLinkBlocker(Blocker) :
             index_to_id[i] = record_id
             base_tokens[i] = doc
 
-        for j, (record_id, doc) in enumerate(data_2, len(data_1)+1) :
+        for j, (record_id, doc) in enumerate(data_2, i+1) :
             index_to_id[j] = record_id
             index.index_doc(j, doc)
 
